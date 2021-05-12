@@ -26,7 +26,7 @@ var incBtn = document.getElementById('qty-plus-btn');
     incBtn.addEventListener('click', function() {
         let qtyDivVal = parseInt(qtyDiv[0].textContent) + 1;
         if(qtyDivVal>50){
-            alert('Exceeds Stocks');
+            alert('Not enough stocks');
         } else {
         qtyDiv[0].textContent = qtyDivVal;
         }
