@@ -19,7 +19,7 @@ hr{
             flex-direction: column;
 
             &--big{
-                width: 370px
+                height: 370px;
             }
         }
 
@@ -120,7 +120,11 @@ hr{
                 &:hover{
                     background: #fff;
                 }
-
+                &.main__product--white{
+                    &:hover{
+                        background: rgb(196, 196, 196);
+                    }
+                }
                 &::after{
                     content: '';
                     width: 12px;
@@ -135,20 +139,30 @@ hr{
             }
         }
 
-        &--blue{
-            background: #006CFF;
-            border: 2px solid #006CFF;
+        &--white{
+            background: #ffffff;
+            border: 1px solid rgb(238, 238, 238);
 
             &::after{
-                background: #006CFF;
+                background: #ffffff;
             }
+
         }
+
         &--red{
             background: #FC3E39;
             border: 2px solid #FC3E39;
 
             &::after{
                 background: #FC3E39;
+            }
+        }
+        &--pink{
+            background: #ffa7a3;
+            border: 2px solid #ffa7a3;
+
+            &::after{
+                background: #ffa7a3;
             }
         }
         &--black{
@@ -158,11 +172,11 @@ hr{
                 background: #171717;
             }
         }
-        &--yellow{
-            background: #FFF600;
-            border: 2px solid #FFF600;
+        &--copper{
+            background: #faa165;
+            border: 2px solid #faa165;
             &::after{
-                background: #FFF600;
+                background: #faa165;
             }
         }
         &--sizes{
