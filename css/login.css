@@ -1,0 +1,89 @@
+.login {
+  background-image: url("/images/cover-img.jpg");
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.login--overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+.login__branding {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.login__branding h2 {
+  font-size: 1.4em;
+  color: #fff;
+}
+
+.login__branding h2 span {
+  color: #FD2E2E;
+}
+
+.login__branding hr {
+  border-top: 4px solid #B2002D;
+  width: 150px;
+  height: 0;
+}
+
+.login__branding > span {
+  color: #fff;
+}
+
+.login__box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 400px;
+  height: 600px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.login__box--apple-login {
+  background-color: #000;
+}
+
+.login__box--facebook-login {
+  background-color: #3A5998;
+}
+
+.login__box button {
+  color: #fff;
+  border-radius: 8px;
+}
+
+.login__box hr {
+  position: relative;
+  top: 20px;
+  border-top: 2px solid #F6F7F8;
+}
+
+.login__box input[type="text"] {
+  border-radius: 8px;
+  border: 2px solid #F6F7F8;
+}
+
+.login__box input[type="submit"] {
+  background-color: #FD2E2E;
+}
+
+.login__box p a {
+  text-decoration: none;
+  color: #B2002D;
+}
+/*# sourceMappingURL=login.css.map */
