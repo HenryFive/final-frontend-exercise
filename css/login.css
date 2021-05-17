@@ -20,9 +20,12 @@
 }
 
 .login__branding {
+  -ms-grid-column-align: center;
+      justify-self: center;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  margin: 50px;
 }
 
 .login__branding h2 {
@@ -48,8 +51,8 @@
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  width: 400px;
-  height: 600px;
+  padding: 20px;
+  margin: 150px 200px;
   border-radius: 8px;
   background-color: #fff;
 }
@@ -64,12 +67,19 @@
 
 .login__box button {
   color: #fff;
+  margin: 10px 0;
+  height: 30px;
+  width: 100%;
   border-radius: 8px;
+}
+
+.login__box span {
+  background-color: #fff;
 }
 
 .login__box hr {
   position: relative;
-  top: 20px;
+  top: -10px;
   border-top: 2px solid #F6F7F8;
 }
 
