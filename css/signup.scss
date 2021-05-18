@@ -1,15 +1,16 @@
 .background{
     background-image: url("/images/cover-img.jpg");
     background-position: center;
-    height: 100%;
-    width: 100%;
     background-size: 100% auto;
+    height: 100vh;
+    width: auto;
 }
-.login{
+
+.signup{
     display: flex;
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     top:0;
     left:0;
     z-index: 0;
@@ -46,17 +47,22 @@
         max-width: 400px;
         border-radius: 8px;
         background-color: #fff;
-        &--apple-login{
-            background-color: #000;
-        }
-        &--facebook-login{
-            background-color: #3A5998;
-        }
         h2{
             font-weight: 700;
             font-size: 1.4em;
             text-align: center;
             margin: 20px 0;
+        }
+        div{
+            display: block;
+            text-align: center;
+            width: inherit;
+            height: fit-content;
+            a{
+                text-decoration: none;
+                color: rgb(15, 15, 185);
+                font-weight: 600;
+            }
         }
         button{
             color: #fff;
@@ -80,14 +86,6 @@
             border: 0;
             border-top: 2px solid #F6F7F8;
         }
-        span{
-            margin: 10px auto 0;
-            font-weight: 600;
-            width:30px;
-            text-align: center;
-            background-color: #fff;
-            z-index: 1;
-        }
         label{
             margin-top: 20px;
             padding: 5px 0;
@@ -107,6 +105,19 @@
             font-size: 0.8em;
             padding: 12px;
         }
+        span{
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            input[type="checkbox"]{
+                height:20px;
+                width: 20px;
+            }
+            label{
+                margin-left: 5px;
+                margin-top: 3px;
+            }
+        }
         p{
             font-size: 0.7em;
             text-align: center;
@@ -123,7 +134,7 @@
     .background{
         background-size: auto 100%;
     }
-    .login{
+    .signup{
         &__branding{
             margin: auto;
         }
@@ -132,23 +143,23 @@
         }
     }
 }
-@media (max-width:961px)  { 
+@media (max-width:961px)  {
     .background{
         background-attachment: fixed;
     }
-    .login{
+    .signup{
         flex-direction: column;
         &__branding{
             padding: 80px 0 0;
             margin: 0 80px;
         }
         &__form{
-            margin: 80px auto;
+            margin: 50px auto;
         }
     }
 }
 @media (max-width:540px)  {
-    .login{
+    .signup{
         &__branding{
             padding: 30px 0 0;
             margin: 0 80px;
@@ -159,10 +170,10 @@
     }
 }
 @media (max-width:481px)  {
-    .background{
+    .background{ 
         background-image: none;
     }
-    .login{
+    .signup{
         background-image: none;
         display: block;
         &__branding{
@@ -173,5 +184,4 @@
             margin: 0 auto;
         }
     }
-
 }

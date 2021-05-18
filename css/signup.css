@@ -1,18 +1,18 @@
 .background {
   background-image: url("/images/cover-img.jpg");
   background-position: center;
-  height: 100%;
-  width: 100%;
   background-size: 100% auto;
+  height: 100vh;
+  width: auto;
 }
 
-.login {
+.signup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 100vh;
-  width: 100vw;
+  width: auto;
   top: 0;
   left: 0;
   z-index: 0;
@@ -20,24 +20,24 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
 }
 
-.login__branding {
+.signup__branding {
   -ms-grid-column-align: center;
       justify-self: center;
   margin: auto 15vh;
   width: 300px;
 }
 
-.login__branding h2 {
+.signup__branding h2 {
   font-weight: 600;
   font-size: 2em;
   color: #fff;
 }
 
-.login__branding h2 span {
+.signup__branding h2 span {
   color: #FD2E2E;
 }
 
-.login__branding hr {
+.signup__branding hr {
   border: 0;
   margin: 20px 0;
   border-top: 4px solid #B2002D;
@@ -45,12 +45,12 @@
   height: 0;
 }
 
-.login__branding > span {
+.signup__branding > span {
   font-weight: 200;
   color: #fff;
 }
 
-.login__form {
+.signup__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,22 +65,29 @@
   background-color: #fff;
 }
 
-.login__form--apple-login {
-  background-color: #000;
-}
-
-.login__form--facebook-login {
-  background-color: #3A5998;
-}
-
-.login__form h2 {
+.signup__form h2 {
   font-weight: 700;
   font-size: 1.4em;
   text-align: center;
   margin: 20px 0;
 }
 
-.login__form button {
+.signup__form div {
+  display: block;
+  text-align: center;
+  width: inherit;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.signup__form div a {
+  text-decoration: none;
+  color: #0f0fb9;
+  font-weight: 600;
+}
+
+.signup__form button {
   color: #fff;
   margin: 10px 0;
   width: 100%;
@@ -91,13 +98,13 @@
   line-height: 1.5em;
 }
 
-.login__form button img {
+.signup__form button img {
   height: 15px;
   width: auto;
   margin: 0 15px;
 }
 
-.login__form hr {
+.signup__form hr {
   z-index: 0;
   position: relative;
   top: 18px;
@@ -105,28 +112,19 @@
   border-top: 2px solid #F6F7F8;
 }
 
-.login__form span {
-  margin: 10px auto 0;
-  font-weight: 600;
-  width: 30px;
-  text-align: center;
-  background-color: #fff;
-  z-index: 1;
-}
-
-.login__form label {
+.signup__form label {
   margin-top: 20px;
   padding: 5px 0;
 }
 
-.login__form input[type="text"] {
+.signup__form input[type="text"] {
   border-radius: 8px;
   border: 2px solid #F6F7F8;
   height: 30px;
   padding: 0 5px;
 }
 
-.login__form input[type="submit"] {
+.signup__form input[type="submit"] {
   background-color: #FD2E2E;
   border: 0;
   border-radius: 8px;
@@ -136,13 +134,33 @@
   padding: 12px;
 }
 
-.login__form p {
+.signup__form span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.signup__form span input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+.signup__form span label {
+  margin-left: 5px;
+  margin-top: 3px;
+}
+
+.signup__form p {
   font-size: 0.7em;
   text-align: center;
   padding: 0 40px 20px;
 }
 
-.login__form p a {
+.signup__form p a {
   text-decoration: none;
   color: #B2002D;
 }
@@ -151,10 +169,10 @@
   .background {
     background-size: auto 100%;
   }
-  .login__branding {
+  .signup__branding {
     margin: auto;
   }
-  .login__form {
+  .signup__form {
     margin: auto;
   }
 }
@@ -163,27 +181,27 @@
   .background {
     background-attachment: fixed;
   }
-  .login {
+  .signup {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .login__branding {
+  .signup__branding {
     padding: 80px 0 0;
     margin: 0 80px;
   }
-  .login__form {
-    margin: 80px auto;
+  .signup__form {
+    margin: 50px auto;
   }
 }
 
 @media (max-width: 540px) {
-  .login__branding {
+  .signup__branding {
     padding: 30px 0 0;
     margin: 0 80px;
   }
-  .login__form {
+  .signup__form {
     margin: 20px auto;
   }
 }
@@ -192,16 +210,16 @@
   .background {
     background-image: none;
   }
-  .login {
+  .signup {
     background-image: none;
     display: block;
   }
-  .login__branding {
+  .signup__branding {
     display: none;
   }
-  .login__form {
+  .signup__form {
     padding-top: 20px;
     margin: 0 auto;
   }
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=signup.css.map */
