@@ -1,0 +1,207 @@
+.background {
+  background-image: url("/images/cover-img.jpg");
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  background-size: 100% auto;
+}
+
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+.login__branding {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: auto 15vh;
+  width: 300px;
+}
+
+.login__branding h2 {
+  font-weight: 600;
+  font-size: 2em;
+  color: #fff;
+}
+
+.login__branding h2 span {
+  color: #FD2E2E;
+}
+
+.login__branding hr {
+  border: 0;
+  margin: 20px 0;
+  border-top: 4px solid #B2002D;
+  width: 70px;
+  height: 0;
+}
+
+.login__branding > span {
+  font-weight: 200;
+  color: #fff;
+}
+
+.login__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  margin: auto 15vw auto auto;
+  max-width: 400px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.login__form--apple-login {
+  background-color: #000;
+}
+
+.login__form--facebook-login {
+  background-color: #3A5998;
+}
+
+.login__form h2 {
+  font-weight: 700;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.login__form button {
+  color: #fff;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  font-size: 0.8em;
+  padding: 12px;
+  line-height: 1.5em;
+}
+
+.login__form button img {
+  height: 15px;
+  width: auto;
+  margin: 0 15px;
+}
+
+.login__form hr {
+  z-index: 0;
+  position: relative;
+  top: 18px;
+  border: 0;
+  border-top: 2px solid #F6F7F8;
+}
+
+.login__form span {
+  margin: 10px auto 0;
+  font-weight: 600;
+  width: 30px;
+  text-align: center;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.login__form label {
+  margin-top: 20px;
+  padding: 5px 0;
+}
+
+.login__form input[type="text"] {
+  border-radius: 8px;
+  border: 2px solid #F6F7F8;
+  height: 30px;
+  padding: 0 5px;
+}
+
+.login__form input[type="submit"] {
+  background-color: #FD2E2E;
+  border: 0;
+  border-radius: 8px;
+  margin: 20px 0;
+  color: #fff;
+  font-size: 0.8em;
+  padding: 12px;
+}
+
+.login__form p {
+  font-size: 0.7em;
+  text-align: center;
+  padding: 0 40px 20px;
+}
+
+.login__form p a {
+  text-decoration: none;
+  color: #B2002D;
+}
+
+@media (max-width: 1024px) {
+  .background {
+    background-size: auto 100%;
+  }
+  .login__branding {
+    margin: auto;
+  }
+  .login__form {
+    margin: auto;
+  }
+}
+
+@media (max-width: 961px) {
+  .background {
+    background-attachment: fixed;
+  }
+  .login {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login__branding {
+    padding: 80px 0 0;
+    margin: 0 80px;
+  }
+  .login__form {
+    margin: 80px auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .login__branding {
+    padding: 30px 0 0;
+    margin: 0 80px;
+  }
+  .login__form {
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 481px) {
+  .background {
+    background-image: none;
+  }
+  .login {
+    background-image: none;
+    display: block;
+  }
+  .login__branding {
+    display: none;
+  }
+  .login__form {
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=login.css.map */
