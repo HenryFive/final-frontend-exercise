@@ -18,23 +18,23 @@
                 <hr>
                 <span>Browse from over 500 devices in your area.</span>
             </section>
-            <form class="login__form">
+            <form class="login__form" id="login-form">
                 <h2>Sign In</h2>
                 <button class="login__form--apple-login"><img src="images/apple-64.png" alt="apple logo"> SIGN IN WITH APPLE</button>
                 <button class="login__form--facebook-login"><img src="images/fb-64.png" alt="facebook logo"> SIGN IN WITH FACEBOOK</button>
                 <hr>
                 <span>OR</span>
                 <label for="email">Email</label>
-                <input type="text" id="email" class="login__box--email">
+                <input type="text" id="email" class="login__box--email" name="email">
                 <label for="password">Password</label>
-                <input type="text" id="password" class="login__box--password">
-                <input type="submit" value="SIGN IN">          
+                <input type="password" id="password" class="login__box--password" name="password">
+                <input type="submit" id="login-submit" value="SIGN IN">          
                 <p>By continuing, you agree to accept our Privacy Policy & Terms of Service.</p>      
                 <p>Don't have an account? <a href="signup.html">Create new accoungt</a></p>
             </form>
         </section>
     </section>
     
-
+<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

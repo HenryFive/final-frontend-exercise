@@ -90,9 +90,9 @@
             margin-top: 20px;
             padding: 5px 0;
         }
-        input[type="text"]{
+        input[type="text"], input[type="password"] {
             border-radius: 8px;
-            border: 2px solid #F6F7F8;
+            border: 2px solid #e7e7e7;
             height: 30px;
             padding: 0 5px;
         }
