@@ -40,10 +40,10 @@ document.addEventListener("DOMContentLoaded", function(){
 
     form.addEventListener("submit", function(e) {
         e.preventDefault();
-        let json = toJSONString(this);
-        console.log(json);
-
-        output.innerHTML = json;
+        let userDataJson = toJSONString(this);
+        console.log(userDataJson);
+        localStorage.setItem('userDataLS', userDataJson);
+        output.innerHTML = userDataJson;
     },false)
 
 })
