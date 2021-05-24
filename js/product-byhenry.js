@@ -22,13 +22,30 @@ function selectCopper(){
 
 var qtyDiv = document.getElementsByClassName('cart-section__table-row--qty--number');
 
+if(localStorage.getItem("cartLS") === null){
+    cartObj = {
+        0:{
+            qty : 2
+        },
+    };
+    qtyDiv[0].textContent = cartObj[0].qty;
+    localStorage.setItem('cartLS', JSON.stringify(cartObj));
+} else {
+    cartObj = JSON.parse(localStorage.getItem("cartLS"));
+    qtyDiv[0].textContent = cartObj[0].qty;
+    
+}
+
+
 var incBtn = document.getElementById('qty-plus-btn');
     incBtn.addEventListener('click', function() {
         let qtyDivVal = parseInt(qtyDiv[0].textContent) + 1;
         if(qtyDivVal>50){
             alert('Not enough stocks');
         } else {
-        qtyDiv[0].textContent = qtyDivVal;
+            qtyDiv[0].textContent = qtyDivVal;
+            cartObj[0].qty = qtyDivVal;
+            localStorage.setItem('cartLS', JSON.stringify(cartObj));
         }
     }
     );
@@ -38,6 +55,8 @@ var decBtn = document.getElementById('qty-minus-btn');
         let qtyDivVal = parseInt(qtyDiv[0].textContent) - 1;
         if(qtyDivVal>0){
             qtyDiv[0].textContent = qtyDivVal;
+            cartObj[0].qty = qtyDivVal;
+            localStorage.setItem('cartLS', JSON.stringify(cartObj));
         }
     }
     );
