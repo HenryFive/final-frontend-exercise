@@ -8,17 +8,24 @@ const tableShipFee = document.getElementsByClassName('cart-section__bottom__tota
 const tableTotal = document.getElementsByClassName('cart-section__bottom__total-table--total')[0].lastElementChild;
 
 //localStorage.removeItem("cartLS"); 
-var cartObj;
+var cartObj = {};
 
-if (localStorage.getItem("cartLS") === null){
+if(localStorage.getItem("cartLS") === null){
     cartObj = {
         0:{
-            qty : 2
+            qty : qty[0].textContent
         },
         1:{
             qty : 3
         }
     };
+    qty[0].textContent = cartObj[0].qty;
+    qty[1].textContent = cartObj[1].qty;
+    localStorage.setItem('cartLS', JSON.stringify(cartObj));
+    computeSubTotal();
+} else if (cartObj[1] === undefined) {
+    cartObj = JSON.parse(localStorage.getItem("cartLS"));
+    cartObj[1].qty = 3;
     qty[0].textContent = cartObj[0].qty;
     qty[1].textContent = cartObj[1].qty;
     localStorage.setItem('cartLS', JSON.stringify(cartObj));
