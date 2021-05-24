@@ -88,6 +88,7 @@
 }
 
 .signup__form button {
+  cursor: pointer;
   color: #fff;
   margin: 10px 0;
   width: 100%;
@@ -117,7 +118,7 @@
   padding: 5px 0;
 }
 
-.signup__form input[type="text"], .signup__form input[type="password"] {
+.signup__form input[type="text"], .signup__form input[type="email"], .signup__form input[type="password"] {
   border-radius: 8px;
   border: 2px solid #e7e7e7;
   height: 30px;
@@ -125,6 +126,7 @@
 }
 
 .signup__form input[type="submit"] {
+  cursor: pointer;
   background-color: #FD2E2E;
   border: 0;
   border-radius: 8px;
@@ -132,6 +134,14 @@
   color: #fff;
   font-size: 0.8em;
   padding: 12px;
+}
+
+.signup__form input[type="submit"]:hover {
+  background-color: #ff5050;
+}
+
+.signup__form input[type="submit"]:active {
+  background-color: #FD2E2E;
 }
 
 .signup__form span {

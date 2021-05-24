@@ -67,9 +67,34 @@
 
 .login__form--apple-login {
   background-color: #000;
+  letter-spacing: 0.05em;
+}
+
+.login__form--apple-login img {
+  margin-right: 20px;
+}
+
+.login__form--apple-login:hover {
+  background-color: #383838;
+}
+
+.login__form--apple-login:active {
+  background-color: #000;
 }
 
 .login__form--facebook-login {
+  background-color: #3A5998;
+}
+
+.login__form--facebook-login img {
+  margin-right: 10px;
+}
+
+.login__form--facebook-login:hover {
+  background-color: #5075be;
+}
+
+.login__form--facebook-login:active {
   background-color: #3A5998;
 }
 
@@ -81,6 +106,7 @@
 }
 
 .login__form button {
+  cursor: pointer;
   color: #fff;
   margin: 10px 0;
   width: 100%;
@@ -94,7 +120,6 @@
 .login__form button img {
   height: 15px;
   width: auto;
-  margin: 0 15px;
 }
 
 .login__form hr {
@@ -119,7 +144,7 @@
   padding: 5px 0;
 }
 
-.login__form input[type="text"], .login__form input[type="password"] {
+.login__form input[type="email"], .login__form input[type="password"] {
   border-radius: 8px;
   border: 2px solid #e7e7e7;
   height: 30px;
@@ -127,6 +152,7 @@
 }
 
 .login__form input[type="submit"] {
+  cursor: pointer;
   background-color: #FD2E2E;
   border: 0;
   border-radius: 8px;
@@ -134,6 +160,14 @@
   color: #fff;
   font-size: 0.8em;
   padding: 12px;
+}
+
+.login__form input[type="submit"]:hover {
+  background-color: #ff5050;
+}
+
+.login__form input[type="submit"]:active {
+  background-color: #FD2E2E;
 }
 
 .login__form p {

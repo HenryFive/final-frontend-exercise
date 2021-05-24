@@ -48,8 +48,27 @@
         background-color: #fff;
         &--apple-login{
             background-color: #000;
+            letter-spacing: 0.05em;
+            img{
+                margin-right: 20px;
+            }
+        }
+        &--apple-login:hover{
+            background-color: rgb(56, 56, 56);
+        }
+        &--apple-login:active{
+            background-color: #000;
         }
         &--facebook-login{
+            background-color: #3A5998;
+            img{
+                margin-right: 10px;
+            }
+        }
+        &--facebook-login:hover{
+            background-color: #5075be;
+        }
+        &--facebook-login:active{
             background-color: #3A5998;
         }
         h2{
@@ -59,6 +78,7 @@
             margin: 20px 0;
         }
         button{
+            cursor: pointer;
             color: #fff;
             margin: 10px 0;
             width: 100%;
@@ -70,8 +90,7 @@
             img{
                 height: 15px;
                 width: auto;
-                margin: 0 15px;
-            }
+                }
         }
         hr{
             z-index: 0;
@@ -92,13 +111,14 @@
             margin-top: 20px;
             padding: 5px 0;
         }
-        input[type="text"], input[type="password"] {
+        input[type="email"], input[type="password"] {
             border-radius: 8px;
             border: 2px solid #e7e7e7;
             height: 30px;
             padding: 0 5px;
         }
         input[type="submit"]{
+            cursor: pointer;
             background-color: #FD2E2E;
             border: 0;
             border-radius: 8px;
@@ -106,6 +126,12 @@
             color: #fff;
             font-size: 0.8em;
             padding: 12px;
+        }
+        input[type="submit"]:hover{
+            background-color: #ff5050;
+        }
+        input[type="submit"]:active{
+            background-color: #FD2E2E;
         }
         p{
             font-size: 0.7em;
